@@ -15,3 +15,6 @@ puts "Peter Hitchcock"
 puts "Samantha Harris"
 puts "Yvette Cook"
 puts "David Thompson"
+print "Overall, we have "
+print 16
+puts " great students"

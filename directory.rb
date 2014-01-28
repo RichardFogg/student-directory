@@ -2,22 +2,22 @@ student_count = 16
 # let's put all students into an array
 students = [
 
-"Abraham Thomas",
-"Andy Parton" ,
-"Damien Hogan" ,
-"Dean Bryen" ,
-"Dharmesh Raithatha" ,
-"Enrique Comba Riepenhausen" ,
-"Joan Senent" ,
-"Katrina Harradine" ,
-"John Damico" ,
-"Jorja Tracy Hung" ,
-"Kiy-Hong Tang" ,
-"Peter Saxton" ,
-"Peter Hitchcock" ,
-"Samantha Harris" ,
-"Yvette Cook" ,
-"David Thompson"
+{:name => "Abraham Thomas", :cohort=> :January},
+{:name => "Andy Parton" , :cohort=> :January},
+{:name => "Damien Hogan" , :cohort=> :January},
+{:name => "Dean Bryen" , :cohort=> :January},
+{:name => "Dharmesh Raithatha" , :cohort=> :January},
+{:name => "Enrique Comba Riepenhausen" , :cohort=> :January},
+{:name => "Joan Senent" , :cohort=> :January},
+{:name => "Katrina Harradine" , :cohort=> :January},
+{:name => "John Damico" , :cohort=> :January},
+{:name => "Jorja Tracy Hung" , :cohort=> :January},
+{:name => "Kiy-Hong Tang" , :cohort=> :January},
+{:name => "Peter Saxton" , :cohort=> :January},
+{:name => "Peter Hitchcock" , :cohort=> :January},
+{:name => "Samantha Harris" , :cohort=> :January},
+{:name => "Yvette Cook" , :cohort=> :January},
+{:name => "David Thompson", :cohort=> :January},
 ]
 
 def print_header
@@ -26,9 +26,9 @@ puts "The students of my cohort at Makers Academy"
 puts "------------------"
 end
 
-def print (names)
-	names.each do |name|
-		puts name
+def print (students)
+	students.each do |student|
+		puts "#{student[:name]} (#{student[:cohort]} cohort)"
 	end
 end
 
